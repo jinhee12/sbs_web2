@@ -22,7 +22,7 @@ body { font-family: 'Noto Sans KR', sans-serif; }
 /* 헤더 */
 header { margin-bottom: 20px; }
 
-/* 로그인 ㅣ 회원가입 */
+/* 로그인 | 회원가입 */
 #userMenu { width: 1050px; margin: 0 auto; }
 #userMenu * { font-weight: 400; letter-spacing: -1px; }
 #userMenu .list_menu {
@@ -33,7 +33,7 @@ header { margin-bottom: 20px; }
 #userMenu .menu { position: relative; }
 
 /* userMenu 구분기호 */
-/* 로그인 ㅣ 회원가입 ㅣ 고객센터 */
+/* 로그인 | 회원가입 | 고객센터 */
 /* 가상선택자 :after - 문장의 마지막 영역을 선택 */
 /* 가상선택자 :not(제외할 선택자)
    - 지정된 여러 개의 선택자 중에서 제외를 시킨다.
@@ -50,7 +50,9 @@ header { margin-bottom: 20px; }
 #userMenu .menu .link_menu { padding: 0 13px; }
 
 /* 헤더 - 로고 */
-#headerLogo { position: relative; width: 1050px; height: 63px; margin: 0 auto; }
+#headerLogo { 
+    position: relative; width: 1050px; height: 63px; margin: 0 auto;
+}
 
 #headerLogo .logo { display: flex; justify-content: center; }
 #headerLogo .logo img { width: 103px; height: 79px; }
@@ -67,7 +69,7 @@ header { margin-bottom: 20px; }
 }
 
 #gnb .gnb_kurly { width: 1050px; background-color: white; letter-spacing: -1px; }
-#gnb .inner_gnbkurly { position: relative; width: 1050px; height: 56px; margin: 0 auto; } 
+#gnb .inner_gnbkurly { position: relative; width: 1050px; height: 56px; margin: 0 auto; }
 
 /* 메뉴 영역 - 메인메뉴 */
 #gnb .gnb_main ul.gnb a {
@@ -83,10 +85,10 @@ header { margin-bottom: 20px; }
 #gnb .gnb_main ul.gnb a .txt { font-weight: 700; }
 #gnb .gnb_main ul.gnb a span:not(.ico):hover {
     color: #5f0080;
-    border-bottom: 1.7px solid #5f0080;
+    border-bottom: 1.5px solid #5f0080;
 }
 
-/* 메뉴 영역 - 전체 카테고리 옆 햄버거 메뉴 아이콘 */
+/* 메뉴 영역 - 전체카테고리 옆 햄버거 메뉴 아이콘 */
 #gnb .gnb_main .menu1 .ico {
     float: left;
     width: 16px;
@@ -94,6 +96,7 @@ header { margin-bottom: 20px; }
     margin: 5px 14px 0 0;
     background: url(../img/ico_gnb_all_off.png) no-repeat;
 }
+
 
 /* 검색 영역 */
 #gnb .gnb_search {
@@ -114,7 +117,7 @@ header { margin-bottom: 20px; }
     font-weight: 400;
     color: #666;
     line-height: 16px;
-    outline: none;       /* 입력상자의 윤곽선을 없앰 (input 태그가 원래 가지고 있는 것 : 윤곽선) */
+    outline: none;          /* 입력상자의 윤곽선을 없앰 */
 }
 
 /* 검색 영역 - 검색 아이콘 */
@@ -122,7 +125,7 @@ header { margin-bottom: 20px; }
     width: 30px;
     height: 30px;
     position: absolute;
-    right: 3px;
+    right: 5px;
     top: 3px;
 }
 
@@ -139,7 +142,7 @@ header { margin-bottom: 20px; }
 }
 
 #gnb .cart_count .btn_cart {
-    background: url(../img/ico_cart.svg) no-repeat 50% 50%;
+    background: url(../img/ico_cart.svg) no-repeat 50% 50%; 
     display: block;
     width: 36px;
     height: 36px;
